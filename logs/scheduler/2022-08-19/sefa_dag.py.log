@@ -1,0 +1,481 @@
+[2022-08-19 23:03:24,193] {processor.py:153} INFO - Started process (PID=1331) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:03:24,194] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:03:24,195] {logging_mixin.py:115} INFO - [2022-08-19 23:03:24,195] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:03:24,208] {logging_mixin.py:115} INFO - [2022-08-19 23:03:24,207] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/sefa_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sefa_dag.py", line 5, in <module>
+    from airflow.operators.empty import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.empty' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/empty.py)
+[2022-08-19 23:03:24,209] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:03:24,222] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.031 seconds
+[2022-08-19 23:03:35,113] {processor.py:153} INFO - Started process (PID=1363) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:03:35,114] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:03:35,115] {logging_mixin.py:115} INFO - [2022-08-19 23:03:35,115] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:03:35,130] {logging_mixin.py:115} INFO - [2022-08-19 23:03:35,129] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/sefa_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sefa_dag.py", line 5, in <module>
+    from airflow.operators.empty import PythonOperator
+ImportError: cannot import name 'PythonOperator' from 'airflow.operators.empty' (/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/empty.py)
+[2022-08-19 23:03:35,131] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:03:35,145] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.034 seconds
+[2022-08-19 23:04:02,967] {processor.py:153} INFO - Started process (PID=1404) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:04:02,968] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:04:02,969] {logging_mixin.py:115} INFO - [2022-08-19 23:04:02,969] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:04:03,407] {logging_mixin.py:115} INFO - [2022-08-19 23:04:03,407] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:04:03,507] {logging_mixin.py:115} INFO - [2022-08-19 23:04:03,504] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/sefa_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sefa_dag.py", line 24, in <module>
+    task_id="get_pandas_version", python_callable=get_pandas_version, dag=dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 880, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 990, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1048, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2022-08-19 23:04:03,509] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:04:03,604] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.639 seconds
+[2022-08-19 23:04:34,124] {processor.py:153} INFO - Started process (PID=1481) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:04:34,125] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:04:34,127] {logging_mixin.py:115} INFO - [2022-08-19 23:04:34,127] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:04:34,274] {logging_mixin.py:115} INFO - [2022-08-19 23:04:34,274] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:04:34,354] {logging_mixin.py:115} INFO - [2022-08-19 23:04:34,351] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/sefa_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sefa_dag.py", line 24, in <module>
+    task_id="get_pandas_version", python_callable=get_pandas_version, dag=dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 880, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 990, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1048, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2022-08-19 23:04:34,355] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:04:34,369] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.247 seconds
+[2022-08-19 23:05:04,818] {processor.py:153} INFO - Started process (PID=1549) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:05:04,820] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:05:04,821] {logging_mixin.py:115} INFO - [2022-08-19 23:05:04,821] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:05:04,968] {logging_mixin.py:115} INFO - [2022-08-19 23:05:04,968] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:05:05,051] {logging_mixin.py:115} INFO - [2022-08-19 23:05:05,049] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/sefa_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sefa_dag.py", line 24, in <module>
+    task_id="get_pandas_version", python_callable=get_pandas_version, dag=dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 156, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 390, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 880, in __init__
+    self.dag = dag
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 990, in __setattr__
+    super().__setattr__(key, value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1048, in dag
+    dag.add_task(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 2171, in add_task
+    raise AirflowException("DAG is missing the start_date parameter")
+airflow.exceptions.AirflowException: DAG is missing the start_date parameter
+[2022-08-19 23:05:05,052] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:05:05,065] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.250 seconds
+[2022-08-19 23:05:24,253] {processor.py:153} INFO - Started process (PID=1604) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:05:24,255] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:05:24,256] {logging_mixin.py:115} INFO - [2022-08-19 23:05:24,256] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:05:24,269] {logging_mixin.py:115} INFO - [2022-08-19 23:05:24,268] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/sefa_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sefa_dag.py", line 27
+    start_date=datetime.datetime(2020, 1, 1)
+             ^
+SyntaxError: invalid syntax
+[2022-08-19 23:05:24,270] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:05:24,287] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.039 seconds
+[2022-08-19 23:05:39,686] {processor.py:153} INFO - Started process (PID=1652) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:05:39,688] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:05:39,689] {logging_mixin.py:115} INFO - [2022-08-19 23:05:39,689] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:05:39,699] {logging_mixin.py:115} INFO - [2022-08-19 23:05:39,699] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/sefa_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sefa_dag.py", line 27
+    start_date=datetime.datetime(2020, 1, 1)
+             ^
+SyntaxError: invalid syntax
+[2022-08-19 23:05:39,701] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:05:39,719] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.038 seconds
+[2022-08-19 23:05:43,742] {processor.py:153} INFO - Started process (PID=1665) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:05:43,745] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:05:43,746] {logging_mixin.py:115} INFO - [2022-08-19 23:05:43,746] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:05:43,889] {logging_mixin.py:115} INFO - [2022-08-19 23:05:43,889] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:05:43,956] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:05:44,075] {logging_mixin.py:115} INFO - [2022-08-19 23:05:44,075] {manager.py:508} INFO - Created Permission View: can read on DAG:sefa_dag
+[2022-08-19 23:05:44,081] {logging_mixin.py:115} INFO - [2022-08-19 23:05:44,081] {manager.py:508} INFO - Created Permission View: can delete on DAG:sefa_dag
+[2022-08-19 23:05:44,085] {logging_mixin.py:115} INFO - [2022-08-19 23:05:44,085] {manager.py:508} INFO - Created Permission View: can edit on DAG:sefa_dag
+[2022-08-19 23:05:44,086] {logging_mixin.py:115} INFO - [2022-08-19 23:05:44,086] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:05:44,091] {logging_mixin.py:115} INFO - [2022-08-19 23:05:44,091] {dag.py:2439} INFO - Creating ORM DAG for sefa_dag
+[2022-08-19 23:05:44,099] {logging_mixin.py:115} INFO - [2022-08-19 23:05:44,099] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T00:00:00+00:00, run_after=2020-01-01T00:01:00+00:00
+[2022-08-19 23:05:44,108] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.370 seconds
+[2022-08-19 23:06:14,945] {processor.py:153} INFO - Started process (PID=1754) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:06:14,947] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:06:14,950] {logging_mixin.py:115} INFO - [2022-08-19 23:06:14,950] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:06:15,088] {logging_mixin.py:115} INFO - [2022-08-19 23:06:15,088] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:06:15,160] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:06:15,175] {logging_mixin.py:115} INFO - [2022-08-19 23:06:15,175] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:06:15,265] {logging_mixin.py:115} INFO - [2022-08-19 23:06:15,265] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T00:16:00+00:00, run_after=2020-01-01T00:17:00+00:00
+[2022-08-19 23:06:15,273] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.332 seconds
+[2022-08-19 23:06:45,424] {processor.py:153} INFO - Started process (PID=1882) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:06:45,427] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:06:45,429] {logging_mixin.py:115} INFO - [2022-08-19 23:06:45,429] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:06:45,566] {logging_mixin.py:115} INFO - [2022-08-19 23:06:45,566] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:06:45,636] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:06:45,652] {logging_mixin.py:115} INFO - [2022-08-19 23:06:45,651] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:06:45,749] {logging_mixin.py:115} INFO - [2022-08-19 23:06:45,749] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T01:04:00+00:00, run_after=2020-01-01T01:05:00+00:00
+[2022-08-19 23:06:45,756] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.338 seconds
+[2022-08-19 23:07:00,440] {processor.py:153} INFO - Started process (PID=1937) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:07:00,441] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:07:00,443] {logging_mixin.py:115} INFO - [2022-08-19 23:07:00,443] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:07:00,673] {logging_mixin.py:115} INFO - [2022-08-19 23:07:00,673] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:07:00,784] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:07:00,806] {logging_mixin.py:115} INFO - [2022-08-19 23:07:00,806] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:07:01,028] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.590 seconds
+[2022-08-19 23:07:31,644] {processor.py:153} INFO - Started process (PID=2060) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:07:31,645] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:07:31,646] {logging_mixin.py:115} INFO - [2022-08-19 23:07:31,646] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:07:32,089] {logging_mixin.py:115} INFO - [2022-08-19 23:07:32,088] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:07:32,236] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:07:32,256] {logging_mixin.py:115} INFO - [2022-08-19 23:07:32,255] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:07:32,401] {logging_mixin.py:115} INFO - [2022-08-19 23:07:32,401] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T02:08:00+00:00, run_after=2020-01-01T02:09:00+00:00
+[2022-08-19 23:07:32,460] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.819 seconds
+[2022-08-19 23:07:53,950] {processor.py:153} INFO - Started process (PID=2178) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:07:53,954] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:07:53,958] {logging_mixin.py:115} INFO - [2022-08-19 23:07:53,958] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:07:54,266] {logging_mixin.py:115} INFO - [2022-08-19 23:07:54,266] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:07:54,398] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:07:54,421] {logging_mixin.py:115} INFO - [2022-08-19 23:07:54,420] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:07:54,618] {logging_mixin.py:115} INFO - [2022-08-19 23:07:54,618] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T02:40:00+00:00, run_after=2020-01-01T02:41:00+00:00
+[2022-08-19 23:07:54,632] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.684 seconds
+[2022-08-19 23:08:24,739] {processor.py:153} INFO - Started process (PID=2279) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:08:24,740] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:08:24,741] {logging_mixin.py:115} INFO - [2022-08-19 23:08:24,741] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:08:24,937] {logging_mixin.py:115} INFO - [2022-08-19 23:08:24,937] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:08:25,058] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:08:25,095] {logging_mixin.py:115} INFO - [2022-08-19 23:08:25,095] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:08:25,259] {logging_mixin.py:115} INFO - [2022-08-19 23:08:25,259] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T03:12:00+00:00, run_after=2020-01-01T03:13:00+00:00
+[2022-08-19 23:08:25,286] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.550 seconds
+[2022-08-19 23:08:55,949] {processor.py:153} INFO - Started process (PID=2400) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:08:55,950] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:08:55,952] {logging_mixin.py:115} INFO - [2022-08-19 23:08:55,952] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:08:56,189] {logging_mixin.py:115} INFO - [2022-08-19 23:08:56,188] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:08:56,330] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:08:56,351] {logging_mixin.py:115} INFO - [2022-08-19 23:08:56,350] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:08:56,493] {logging_mixin.py:115} INFO - [2022-08-19 23:08:56,492] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T03:57:00+00:00, run_after=2020-01-01T03:58:00+00:00
+[2022-08-19 23:08:56,501] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.554 seconds
+[2022-08-19 23:09:27,072] {processor.py:153} INFO - Started process (PID=2538) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:09:27,073] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:09:27,074] {logging_mixin.py:115} INFO - [2022-08-19 23:09:27,074] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:09:27,292] {logging_mixin.py:115} INFO - [2022-08-19 23:09:27,291] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:09:27,419] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:09:27,443] {logging_mixin.py:115} INFO - [2022-08-19 23:09:27,442] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:09:27,606] {logging_mixin.py:115} INFO - [2022-08-19 23:09:27,606] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T04:44:00+00:00, run_after=2020-01-01T04:45:00+00:00
+[2022-08-19 23:09:27,615] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.546 seconds
+[2022-08-19 23:09:58,436] {processor.py:153} INFO - Started process (PID=2674) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:09:58,437] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:09:58,438] {logging_mixin.py:115} INFO - [2022-08-19 23:09:58,438] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:09:58,564] {logging_mixin.py:115} INFO - [2022-08-19 23:09:58,563] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:09:58,632] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:09:58,648] {logging_mixin.py:115} INFO - [2022-08-19 23:09:58,647] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:09:58,732] {logging_mixin.py:115} INFO - [2022-08-19 23:09:58,732] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T05:21:00+00:00, run_after=2020-01-01T05:22:00+00:00
+[2022-08-19 23:09:58,739] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.306 seconds
+[2022-08-19 23:10:29,690] {processor.py:153} INFO - Started process (PID=2827) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:10:29,692] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:10:29,694] {logging_mixin.py:115} INFO - [2022-08-19 23:10:29,694] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:10:29,962] {logging_mixin.py:115} INFO - [2022-08-19 23:10:29,962] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:10:30,117] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:10:30,156] {logging_mixin.py:115} INFO - [2022-08-19 23:10:30,155] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:10:30,317] {logging_mixin.py:115} INFO - [2022-08-19 23:10:30,317] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T06:09:00+00:00, run_after=2020-01-01T06:10:00+00:00
+[2022-08-19 23:10:30,336] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.652 seconds
+[2022-08-19 23:11:01,159] {processor.py:153} INFO - Started process (PID=2926) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:11:01,160] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:11:01,161] {logging_mixin.py:115} INFO - [2022-08-19 23:11:01,161] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:11:01,289] {logging_mixin.py:115} INFO - [2022-08-19 23:11:01,289] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:11:01,357] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:11:01,375] {logging_mixin.py:115} INFO - [2022-08-19 23:11:01,374] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:11:01,462] {logging_mixin.py:115} INFO - [2022-08-19 23:11:01,462] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T06:41:00+00:00, run_after=2020-01-01T06:42:00+00:00
+[2022-08-19 23:11:01,470] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.313 seconds
+[2022-08-19 23:11:31,804] {processor.py:153} INFO - Started process (PID=3045) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:11:31,806] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:11:31,806] {logging_mixin.py:115} INFO - [2022-08-19 23:11:31,806] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:11:32,027] {logging_mixin.py:115} INFO - [2022-08-19 23:11:32,026] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:11:32,134] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:11:32,156] {logging_mixin.py:115} INFO - [2022-08-19 23:11:32,155] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:11:32,323] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.521 seconds
+[2022-08-19 23:12:02,425] {processor.py:153} INFO - Started process (PID=3182) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:12:02,426] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:12:02,427] {logging_mixin.py:115} INFO - [2022-08-19 23:12:02,427] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:12:02,560] {logging_mixin.py:115} INFO - [2022-08-19 23:12:02,560] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:12:02,633] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:12:02,649] {logging_mixin.py:115} INFO - [2022-08-19 23:12:02,648] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:12:02,739] {logging_mixin.py:115} INFO - [2022-08-19 23:12:02,739] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T08:01:00+00:00, run_after=2020-01-01T08:02:00+00:00
+[2022-08-19 23:12:02,747] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.324 seconds
+[2022-08-19 23:12:33,460] {processor.py:153} INFO - Started process (PID=3309) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:12:33,461] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:12:33,463] {logging_mixin.py:115} INFO - [2022-08-19 23:12:33,463] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:12:33,671] {logging_mixin.py:115} INFO - [2022-08-19 23:12:33,670] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:12:33,791] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:12:33,809] {logging_mixin.py:115} INFO - [2022-08-19 23:12:33,809] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:12:33,946] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.489 seconds
+[2022-08-19 23:13:04,220] {processor.py:153} INFO - Started process (PID=3424) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:13:04,223] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:13:04,224] {logging_mixin.py:115} INFO - [2022-08-19 23:13:04,224] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:13:04,447] {logging_mixin.py:115} INFO - [2022-08-19 23:13:04,447] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:13:04,555] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:13:04,578] {logging_mixin.py:115} INFO - [2022-08-19 23:13:04,577] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:13:04,729] {logging_mixin.py:115} INFO - [2022-08-19 23:13:04,729] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T09:21:00+00:00, run_after=2020-01-01T09:22:00+00:00
+[2022-08-19 23:13:04,739] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.522 seconds
+[2022-08-19 23:13:35,291] {processor.py:153} INFO - Started process (PID=3551) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:13:35,292] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:13:35,294] {logging_mixin.py:115} INFO - [2022-08-19 23:13:35,293] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:13:35,583] {logging_mixin.py:115} INFO - [2022-08-19 23:13:35,582] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:13:35,764] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:13:35,799] {logging_mixin.py:115} INFO - [2022-08-19 23:13:35,798] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:13:35,952] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.664 seconds
+[2022-08-19 23:14:06,631] {processor.py:153} INFO - Started process (PID=3698) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:14:06,632] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:14:06,633] {logging_mixin.py:115} INFO - [2022-08-19 23:14:06,633] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:14:06,877] {logging_mixin.py:115} INFO - [2022-08-19 23:14:06,877] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:14:06,976] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:14:07,004] {logging_mixin.py:115} INFO - [2022-08-19 23:14:07,003] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:14:07,126] {logging_mixin.py:115} INFO - [2022-08-19 23:14:07,126] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T10:40:00+00:00, run_after=2020-01-01T10:41:00+00:00
+[2022-08-19 23:14:07,137] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.508 seconds
+[2022-08-19 23:14:38,151] {processor.py:153} INFO - Started process (PID=3838) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:14:38,153] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:14:38,154] {logging_mixin.py:115} INFO - [2022-08-19 23:14:38,154] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:14:38,291] {logging_mixin.py:115} INFO - [2022-08-19 23:14:38,291] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:14:38,363] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:14:38,379] {logging_mixin.py:115} INFO - [2022-08-19 23:14:38,378] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:14:38,465] {logging_mixin.py:115} INFO - [2022-08-19 23:14:38,465] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T11:24:00+00:00, run_after=2020-01-01T11:25:00+00:00
+[2022-08-19 23:14:38,472] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.323 seconds
+[2022-08-19 23:15:08,850] {processor.py:153} INFO - Started process (PID=3967) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:15:08,852] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:15:08,853] {logging_mixin.py:115} INFO - [2022-08-19 23:15:08,853] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:15:09,063] {logging_mixin.py:115} INFO - [2022-08-19 23:15:09,063] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:15:09,180] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:15:09,202] {logging_mixin.py:115} INFO - [2022-08-19 23:15:09,202] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:15:09,339] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.492 seconds
+[2022-08-19 23:15:39,499] {processor.py:153} INFO - Started process (PID=4091) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:15:39,501] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:15:39,502] {logging_mixin.py:115} INFO - [2022-08-19 23:15:39,502] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:15:39,701] {logging_mixin.py:115} INFO - [2022-08-19 23:15:39,701] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:15:39,818] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:15:39,842] {logging_mixin.py:115} INFO - [2022-08-19 23:15:39,842] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:15:39,998] {logging_mixin.py:115} INFO - [2022-08-19 23:15:39,998] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T12:44:00+00:00, run_after=2020-01-01T12:45:00+00:00
+[2022-08-19 23:15:40,018] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.522 seconds
+[2022-08-19 23:16:10,184] {processor.py:153} INFO - Started process (PID=4239) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:16:10,186] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:16:10,187] {logging_mixin.py:115} INFO - [2022-08-19 23:16:10,187] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:16:10,391] {logging_mixin.py:115} INFO - [2022-08-19 23:16:10,391] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:16:10,516] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:16:10,540] {logging_mixin.py:115} INFO - [2022-08-19 23:16:10,539] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:16:10,692] {logging_mixin.py:115} INFO - [2022-08-19 23:16:10,692] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T13:28:00+00:00, run_after=2020-01-01T13:29:00+00:00
+[2022-08-19 23:16:10,704] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.523 seconds
+[2022-08-19 23:16:41,537] {processor.py:153} INFO - Started process (PID=4371) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:16:41,538] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:16:41,539] {logging_mixin.py:115} INFO - [2022-08-19 23:16:41,539] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:16:41,770] {logging_mixin.py:115} INFO - [2022-08-19 23:16:41,769] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:16:41,886] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:16:41,922] {logging_mixin.py:115} INFO - [2022-08-19 23:16:41,921] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:16:42,076] {logging_mixin.py:115} INFO - [2022-08-19 23:16:42,076] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T14:16:00+00:00, run_after=2020-01-01T14:17:00+00:00
+[2022-08-19 23:16:42,094] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.559 seconds
+[2022-08-19 23:17:12,463] {processor.py:153} INFO - Started process (PID=4510) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:17:12,465] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:17:12,466] {logging_mixin.py:115} INFO - [2022-08-19 23:17:12,466] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:17:12,671] {logging_mixin.py:115} INFO - [2022-08-19 23:17:12,670] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:17:12,794] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:17:12,825] {logging_mixin.py:115} INFO - [2022-08-19 23:17:12,824] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:17:12,978] {logging_mixin.py:115} INFO - [2022-08-19 23:17:12,978] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T15:01:00+00:00, run_after=2020-01-01T15:02:00+00:00
+[2022-08-19 23:17:12,995] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.534 seconds
+[2022-08-19 23:17:43,958] {processor.py:153} INFO - Started process (PID=4641) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:17:43,959] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:17:43,960] {logging_mixin.py:115} INFO - [2022-08-19 23:17:43,960] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:17:44,309] {logging_mixin.py:115} INFO - [2022-08-19 23:17:44,308] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:17:44,470] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:17:44,493] {logging_mixin.py:115} INFO - [2022-08-19 23:17:44,492] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:17:44,649] {logging_mixin.py:115} INFO - [2022-08-19 23:17:44,649] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T15:49:00+00:00, run_after=2020-01-01T15:50:00+00:00
+[2022-08-19 23:17:44,693] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.738 seconds
+[2022-08-19 23:18:14,778] {processor.py:153} INFO - Started process (PID=4769) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:18:14,799] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:18:14,800] {logging_mixin.py:115} INFO - [2022-08-19 23:18:14,800] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:18:15,151] {logging_mixin.py:115} INFO - [2022-08-19 23:18:15,151] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:18:15,300] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:18:15,332] {logging_mixin.py:115} INFO - [2022-08-19 23:18:15,331] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:18:15,498] {logging_mixin.py:115} INFO - [2022-08-19 23:18:15,498] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T16:37:00+00:00, run_after=2020-01-01T16:38:00+00:00
+[2022-08-19 23:18:15,508] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.733 seconds
+[2022-08-19 23:18:46,392] {processor.py:153} INFO - Started process (PID=4902) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:18:46,394] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:18:46,396] {logging_mixin.py:115} INFO - [2022-08-19 23:18:46,396] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:18:46,801] {logging_mixin.py:115} INFO - [2022-08-19 23:18:46,801] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:18:46,976] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:18:46,998] {logging_mixin.py:115} INFO - [2022-08-19 23:18:46,996] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:18:47,145] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.756 seconds
+[2022-08-19 23:19:17,215] {processor.py:153} INFO - Started process (PID=5046) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:19:17,216] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:19:17,217] {logging_mixin.py:115} INFO - [2022-08-19 23:19:17,217] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:19:17,348] {logging_mixin.py:115} INFO - [2022-08-19 23:19:17,348] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:19:17,426] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:19:17,443] {logging_mixin.py:115} INFO - [2022-08-19 23:19:17,443] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:19:17,538] {logging_mixin.py:115} INFO - [2022-08-19 23:19:17,538] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T17:44:00+00:00, run_after=2020-01-01T17:45:00+00:00
+[2022-08-19 23:19:17,547] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.334 seconds
+[2022-08-19 23:19:47,640] {processor.py:153} INFO - Started process (PID=5189) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:19:47,641] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:19:47,642] {logging_mixin.py:115} INFO - [2022-08-19 23:19:47,642] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:19:47,794] {logging_mixin.py:115} INFO - [2022-08-19 23:19:47,793] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:19:47,872] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:19:47,888] {logging_mixin.py:115} INFO - [2022-08-19 23:19:47,888] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:19:47,988] {logging_mixin.py:115} INFO - [2022-08-19 23:19:47,988] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T18:28:00+00:00, run_after=2020-01-01T18:29:00+00:00
+[2022-08-19 23:19:47,997] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.359 seconds
+[2022-08-19 23:20:18,954] {processor.py:153} INFO - Started process (PID=5309) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:20:18,969] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:20:18,972] {logging_mixin.py:115} INFO - [2022-08-19 23:20:18,971] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:20:19,478] {logging_mixin.py:115} INFO - [2022-08-19 23:20:19,478] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:20:19,672] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:20:19,727] {logging_mixin.py:115} INFO - [2022-08-19 23:20:19,726] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:20:20,123] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 1.190 seconds
+[2022-08-19 23:20:50,223] {processor.py:153} INFO - Started process (PID=5433) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:20:50,225] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:20:50,227] {logging_mixin.py:115} INFO - [2022-08-19 23:20:50,227] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:20:50,525] {logging_mixin.py:115} INFO - [2022-08-19 23:20:50,524] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:20:50,712] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:20:50,756] {logging_mixin.py:115} INFO - [2022-08-19 23:20:50,755] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:20:50,914] {logging_mixin.py:115} INFO - [2022-08-19 23:20:50,914] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T19:48:00+00:00, run_after=2020-01-01T19:49:00+00:00
+[2022-08-19 23:20:50,927] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.708 seconds
+[2022-08-19 23:21:21,876] {processor.py:153} INFO - Started process (PID=5571) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:21:21,877] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:21:21,878] {logging_mixin.py:115} INFO - [2022-08-19 23:21:21,878] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:21:22,240] {logging_mixin.py:115} INFO - [2022-08-19 23:21:22,239] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:21:22,379] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:21:22,403] {logging_mixin.py:115} INFO - [2022-08-19 23:21:22,402] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:21:22,558] {logging_mixin.py:115} INFO - [2022-08-19 23:21:22,558] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T20:35:00+00:00, run_after=2020-01-01T20:36:00+00:00
+[2022-08-19 23:21:22,568] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.694 seconds
+[2022-08-19 23:21:25,978] {processor.py:153} INFO - Started process (PID=5588) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:21:25,981] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:21:25,983] {logging_mixin.py:115} INFO - [2022-08-19 23:21:25,983] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:21:26,152] {logging_mixin.py:115} INFO - [2022-08-19 23:21:26,152] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:21:26,230] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:21:26,348] {logging_mixin.py:115} INFO - [2022-08-19 23:21:26,347] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:21:26,362] {logging_mixin.py:115} INFO - [2022-08-19 23:21:26,362] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2020-01-01T20:36:00+00:00, run_after=2020-01-01T21:00:00+00:00
+[2022-08-19 23:21:26,373] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.397 seconds
+[2022-08-19 23:21:43,257] {processor.py:153} INFO - Started process (PID=5657) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:21:43,258] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:21:43,260] {logging_mixin.py:115} INFO - [2022-08-19 23:21:43,260] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:21:43,512] {logging_mixin.py:115} INFO - [2022-08-19 23:21:43,512] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:21:43,619] {logging_mixin.py:115} INFO - [2022-08-19 23:21:43,616] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/sefa_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/sefa_dag.py", line 33, in <module>
+    start_date=datetime.datetime(2022, 20, 8),
+ValueError: month must be in 1..12
+[2022-08-19 23:21:43,620] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:21:43,648] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.394 seconds
+[2022-08-19 23:22:05,679] {processor.py:153} INFO - Started process (PID=5716) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:22:05,680] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:22:05,682] {logging_mixin.py:115} INFO - [2022-08-19 23:22:05,682] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:22:05,821] {logging_mixin.py:115} INFO - [2022-08-19 23:22:05,821] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:22:05,894] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:22:06,007] {logging_mixin.py:115} INFO - [2022-08-19 23:22:06,006] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:22:06,019] {logging_mixin.py:115} INFO - [2022-08-19 23:22:06,019] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2022-08-20T00:00:00+00:00, run_after=2022-08-20T00:30:00+00:00
+[2022-08-19 23:22:06,030] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.354 seconds
+[2022-08-19 23:22:36,257] {processor.py:153} INFO - Started process (PID=5788) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:22:36,258] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:22:36,260] {logging_mixin.py:115} INFO - [2022-08-19 23:22:36,260] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:22:36,393] {logging_mixin.py:115} INFO - [2022-08-19 23:22:36,393] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:22:36,463] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:22:36,479] {logging_mixin.py:115} INFO - [2022-08-19 23:22:36,479] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:22:36,570] {logging_mixin.py:115} INFO - [2022-08-19 23:22:36,570] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2022-08-20T00:00:00+00:00, run_after=2022-08-20T00:30:00+00:00
+[2022-08-19 23:22:36,577] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.323 seconds
+[2022-08-19 23:23:06,785] {processor.py:153} INFO - Started process (PID=5859) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:23:06,787] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:23:06,788] {logging_mixin.py:115} INFO - [2022-08-19 23:23:06,788] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:23:06,922] {logging_mixin.py:115} INFO - [2022-08-19 23:23:06,922] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:23:06,990] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:23:07,006] {logging_mixin.py:115} INFO - [2022-08-19 23:23:07,005] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:23:07,089] {logging_mixin.py:115} INFO - [2022-08-19 23:23:07,089] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2022-08-20T00:00:00+00:00, run_after=2022-08-20T00:30:00+00:00
+[2022-08-19 23:23:07,096] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.314 seconds
+[2022-08-19 23:23:37,390] {processor.py:153} INFO - Started process (PID=5926) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:23:37,392] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:23:37,393] {logging_mixin.py:115} INFO - [2022-08-19 23:23:37,393] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:23:37,540] {logging_mixin.py:115} INFO - [2022-08-19 23:23:37,540] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:23:37,619] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:23:37,720] {logging_mixin.py:115} INFO - [2022-08-19 23:23:37,719] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:23:37,742] {logging_mixin.py:115} INFO - [2022-08-19 23:23:37,742] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2022-08-20T00:00:00+00:00, run_after=2022-08-20T00:30:00+00:00
+[2022-08-19 23:23:37,789] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.401 seconds
+[2022-08-19 23:24:08,776] {processor.py:153} INFO - Started process (PID=5993) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:24:08,778] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:24:08,779] {logging_mixin.py:115} INFO - [2022-08-19 23:24:08,779] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:24:08,905] {logging_mixin.py:115} INFO - [2022-08-19 23:24:08,905] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:24:08,974] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:24:09,062] {logging_mixin.py:115} INFO - [2022-08-19 23:24:09,062] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:24:09,076] {logging_mixin.py:115} INFO - [2022-08-19 23:24:09,076] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2022-08-20T00:00:00+00:00, run_after=2022-08-20T00:30:00+00:00
+[2022-08-19 23:24:09,087] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.313 seconds
+[2022-08-19 23:24:39,252] {processor.py:153} INFO - Started process (PID=6051) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:24:39,254] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:24:39,255] {logging_mixin.py:115} INFO - [2022-08-19 23:24:39,255] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:24:39,399] {logging_mixin.py:115} INFO - [2022-08-19 23:24:39,399] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:24:39,475] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:24:39,572] {logging_mixin.py:115} INFO - [2022-08-19 23:24:39,571] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:24:39,586] {logging_mixin.py:115} INFO - [2022-08-19 23:24:39,586] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2022-08-20T00:00:00+00:00, run_after=2022-08-20T00:30:00+00:00
+[2022-08-19 23:24:39,593] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.347 seconds
+[2022-08-19 23:25:09,658] {processor.py:153} INFO - Started process (PID=6121) to work on /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:25:09,660] {processor.py:641} INFO - Processing file /opt/airflow/dags/sefa_dag.py for tasks to queue
+[2022-08-19 23:25:09,662] {logging_mixin.py:115} INFO - [2022-08-19 23:25:09,662] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:25:09,794] {logging_mixin.py:115} INFO - [2022-08-19 23:25:09,794] {aes.py:23} INFO - libssl detected, it will be used for encryption
+[2022-08-19 23:25:09,869] {processor.py:651} INFO - DAG(s) dict_keys(['sefa_dag']) retrieved from /opt/airflow/dags/sefa_dag.py
+[2022-08-19 23:25:09,960] {logging_mixin.py:115} INFO - [2022-08-19 23:25:09,960] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-19 23:25:09,971] {logging_mixin.py:115} INFO - [2022-08-19 23:25:09,971] {dag.py:2972} INFO - Setting next_dagrun for sefa_dag to 2022-08-20T00:00:00+00:00, run_after=2022-08-20T00:30:00+00:00
+[2022-08-19 23:25:09,978] {processor.py:161} INFO - Processing /opt/airflow/dags/sefa_dag.py took 0.325 seconds

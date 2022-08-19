@@ -1,0 +1,23 @@
+[2022-08-19 23:06:18,036] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: sefa_dag.get_pandas_version scheduled__2020-01-01T00:21:00+00:00 [queued]>
+[2022-08-19 23:06:18,081] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: sefa_dag.get_pandas_version scheduled__2020-01-01T00:21:00+00:00 [queued]>
+[2022-08-19 23:06:18,082] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-19 23:06:18,083] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-19 23:06:18,084] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-19 23:06:18,128] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): get_pandas_version> on 2020-01-01 00:21:00+00:00
+[2022-08-19 23:06:18,153] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'sefa_dag', 'get_pandas_version', 'scheduled__2020-01-01T00:21:00+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/sefa_dag.py', '--cfg-path', '/tmp/tmpw7j8q5to', '--error-file', '/tmp/tmp2dyn0v26']
+[2022-08-19 23:06:18,144] {standard_task_runner.py:52} INFO - Started process 1025 to run task
+[2022-08-19 23:06:18,160] {standard_task_runner.py:80} INFO - Job 53: Subtask get_pandas_version
+[2022-08-19 23:06:18,306] {task_command.py:371} INFO - Running <TaskInstance: sefa_dag.get_pandas_version scheduled__2020-01-01T00:21:00+00:00 [running]> on host fd7a784b9251
+[2022-08-19 23:06:18,466] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=sefa_dag
+AIRFLOW_CTX_TASK_ID=get_pandas_version
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-01T00:21:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-01T00:21:00+00:00
+[2022-08-19 23:06:18,469] {python.py:173} INFO - Done. Returned value was: 1.3.5
+[2022-08-19 23:06:18,516] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=sefa_dag, task_id=get_pandas_version, execution_date=20200101T002100, start_date=20220819T230618, end_date=20220819T230618
+[2022-08-19 23:06:18,579] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-19 23:06:18,645] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

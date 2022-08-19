@@ -1,0 +1,23 @@
+[2022-08-19 23:17:19,801] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: sefa_dag.get_telegram_version scheduled__2020-01-01T15:03:00+00:00 [queued]>
+[2022-08-19 23:17:19,812] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: sefa_dag.get_telegram_version scheduled__2020-01-01T15:03:00+00:00 [queued]>
+[2022-08-19 23:17:19,814] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-19 23:17:19,814] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-19 23:17:19,815] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-19 23:17:19,867] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): get_telegram_version> on 2020-01-01 15:03:00+00:00
+[2022-08-19 23:17:19,894] {standard_task_runner.py:52} INFO - Started process 8684 to run task
+[2022-08-19 23:17:19,927] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'sefa_dag', 'get_telegram_version', 'scheduled__2020-01-01T15:03:00+00:00', '--job-id', '1832', '--raw', '--subdir', 'DAGS_FOLDER/sefa_dag.py', '--cfg-path', '/tmp/tmpmrzmmk_4', '--error-file', '/tmp/tmplt19ok1a']
+[2022-08-19 23:17:19,939] {standard_task_runner.py:80} INFO - Job 1832: Subtask get_telegram_version
+[2022-08-19 23:17:20,229] {task_command.py:371} INFO - Running <TaskInstance: sefa_dag.get_telegram_version scheduled__2020-01-01T15:03:00+00:00 [running]> on host fd7a784b9251
+[2022-08-19 23:17:20,495] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=sefa_dag
+AIRFLOW_CTX_TASK_ID=get_telegram_version
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-01T15:03:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-01T15:03:00+00:00
+[2022-08-19 23:17:20,498] {python.py:173} INFO - Done. Returned value was: 1.24.0
+[2022-08-19 23:17:20,597] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=sefa_dag, task_id=get_telegram_version, execution_date=20200101T150300, start_date=20220819T231719, end_date=20220819T231720
+[2022-08-19 23:17:20,780] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-19 23:17:20,856] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
